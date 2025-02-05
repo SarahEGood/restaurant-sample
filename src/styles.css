@@ -1,0 +1,19 @@
+html, body {
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
+}
+
+#allWrapper {
+    max-width: 700px;
+    background-color: white;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+}
+
+img{
+    object-fit: contain;
+    width: 450px;
+    height: 100%;
+}

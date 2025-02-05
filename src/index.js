@@ -1,4 +1,9 @@
+import "./styles.css";
 import splashImage from "./splash.jpeg";
+
+const allWrapper = document.createElement('div'); 
+allWrapper.setAttribute('id', 'allWrapper');
+document.body.appendChild(allWrapper);
 
 // create navbar
 
@@ -18,12 +23,13 @@ navBar.appendChild(menu);
 navBar.appendChild(about);
 
 header.appendChild(navBar);
-document.body.appendChild(header);
+allWrapper.appendChild(header);
 
 // create content divs
 
 let contentWrapper = document.createElement('div');
-document.body.appendChild(contentWrapper);
+contentWrapper.setAttribute('id', 'wrapper');
+allWrapper.appendChild(contentWrapper);
 
 function writeHome() {
     contentWrapper.innerHTML = '';
@@ -35,6 +41,7 @@ function writeHome() {
 
     homeImage.src = splashImage;
     homeImage.setAttribute('alt', 'Image by Galina Afanaseva from Pixabay');
+    homeImage.setAttribute('id', 'homeImage');
 
     contentWrapper.setAttribute('id', 'content');
 
